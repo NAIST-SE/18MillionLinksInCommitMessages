@@ -1,0 +1,30 @@
+[
+    {
+        "name": "RepoOwner",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "RepoName",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "Branch",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "CommitType",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "CommitHash",
+        "type": "STRING"
+    },
+    {
+        "name": "Link",
+        "type": "STRING"
+    }
+]
