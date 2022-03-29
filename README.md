@@ -35,11 +35,12 @@ _Questions_
 
 ```
 ### RQ6
-- [Link decay]() - HTTP status codes for 6,667,207 distince links
+- [Link decay](./rq6) - dead (x) or alive (o) 6,667,207 distince links
 
 
 ## Authors
 - [Tao Xiao](https://tao-xiao.github.io/)
+- [Sebastian Baltes](https://empirical-software.engineering/)
 - [Hideaki Hata](https://hideakihata.github.io/)
 - [Christoph Treude](http://ctreude.ca/)
 - [Raula Gaikovina Kula](https://raux.github.io/)
