@@ -1,10 +1,10 @@
 # Research Artifact: 18 Million Links in Commit Messages: Purpose, Evolution, and Decay
 
-https://github.com/NAIST-SE/18MillionLinksInCommitMessages/
+[https://github.com/NAIST-SE/18MillionLinksInCommitMessages/](https://github.com/NAIST-SE/18MillionLinksInCommitMessages/)
 
 This is a research artifact for the paper **18 Million Links in Commit Messages: Purpose, Evolution, and Decay**. This artifact is a data repository including all 18,201,165 links associated with the information of languages and commit location (GitHub links including account names, repository names, commit hashes) and the processed data. The purpose of this artifact is enabling researchers to replicate our mixed-methods quantitative results of the paper, and to reuse our around 18 million links in commit messages for further software engineering research.
 
-Since our full dataset exceeds the file size limitation of GitHub, we published a separate version of this archive including the full dataset on Zenodo: [![DOI]().
+Since our full dataset exceeds the file size limitation of GitHub, we split the compressed commit messages that can be found under [tools+data/git-commit-messages/](tools+data/git-commit-messages/)
 
 ## Contents
 - `INSTALL.md` - description of the full dataset and other resources
