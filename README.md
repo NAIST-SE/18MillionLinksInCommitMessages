@@ -6,13 +6,6 @@ This is a research artifact for the paper **18 Million Links in Commit Messages:
 
 Since our full dataset exceeds the file size limitation of GitHub, we split the compressed commit messages that can be found under [tools+data/git-commit-messages/](tools+data/git-commit-messages/)
 
-## Contents
-- `INSTALL.md` - description of the full dataset and other resources
-- `LICENSE.md` - [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)
-- `README.md` - this file
-- `STATUS.md` - application of an artifact badge of reusable
-- `paper.pdf` - the accepted paper
-- `full_dataset` - 18 million links avaiable at [![DOI]()]()
 
 ## Processed data
 ### RQ2 and RQ3
@@ -25,15 +18,6 @@ Since our full dataset exceeds the file size limitation of GitHub, we split the 
 - Stack Overflow case study for RQ5
   - We executed the following two queries for questions and answers on [SOTorrent](https://empirical-software.engineering/projects/sotorrent/) BigQuery
   - [Results]()
-
-_Answers_
-```
-
-```
-_Questions_
-```
-
-```
 ### RQ6
 - [Link decay](./rq6) - dead (x) or alive (o) of 6,667,207 distince links
 
