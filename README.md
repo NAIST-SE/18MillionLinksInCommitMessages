@@ -23,8 +23,20 @@ Since our full dataset exceeds the file size limitation of GitHub, we split some
   - [Raw output of link target status comparison](./rq5/RQ5_Link_Evolution.csv)
   - Link target and status in WayBack Machine (n=1,145)
 - Stack Overflow case study:
-  - We executed the following two queries for questions and answers on the [SOTorrent dataset](https://empirical-software.engineering/projects/sotorrent/) using BigQuery: **TODO**
-  - [Results **TODO**]()
+  - We executed the following query on the [SOTorrent dataset](https://empirical-software.engineering/projects/sotorrent/) using BigQuery:
+  - [Results](./rq5/so-case.xlsx)
+```
+SELECT Event, COUNT(*)
+FROM `SOTorrent.EditHistory`
+WHERE PostId IN (
+SELECT PostId
+FROM `SOTorrent.Threads`
+WHERE ParentId = <threadID>
+)
+AND TIMESTAMP(CreationDate) > TIMESTAMP("<commitTimestamp>")
+GROUP BY Event;
+```
+
 
 ### RQ6
 - [Link decay](./rq6): CSV files indicating whether links were dead (x) or alive (o) (n=6,667,207 distinct links)
