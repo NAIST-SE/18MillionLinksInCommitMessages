@@ -1,4 +1,5 @@
 # Research Artifact: 18 Million Links in Commit Messages: Purpose, Evolution, and Decay
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6442049.svg)](https://doi.org/10.5281/zenodo.6442049)
 
 [https://github.com/NAIST-SE/18MillionLinksInCommitMessages/](https://github.com/NAIST-SE/18MillionLinksInCommitMessages/)
 
