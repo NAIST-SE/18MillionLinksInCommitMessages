@@ -10,7 +10,7 @@ Since our full dataset exceeds the file size limitation of GitHub, we split some
 ## Overview
 
 ### RQ1
-- [Tools and data](./rq1):  `git-log-extractor` is the tool we used to collect the git logs, which where then further processed with Google `bigquery`. `github-repo-list` contains the list of the GitHub projects in our stratified sample, `git-clone-error` the errors we observed while cloning some of the repos, `git-clone-logs` the output of our retrieval tool, and `git-commit-messages` the extracted data, i.e., the commit messages.  
+- [Tools and data](./rq1):  `git-log-extractor` is the tool we used to collect the git logs, which where then further processed with Google `bigquery`. `github-repo-list` contains the list of the GitHub projects in our stratified sample, `git-clone-error` is the errors we observed while cloning some of the repos, `git-clone-logs` is the output of our retrieval tool, and `git-commit-messages` the extracted data, i.e., the commit messages. `gh-links` is the output of links to domain github.com pointing to same repository.
 
 ### RQ2 and RQ3
 - [Coding results](./rq2+3): Target and purpose of links (n=1,145)
