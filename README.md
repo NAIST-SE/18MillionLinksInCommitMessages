@@ -1,4 +1,5 @@
 # Research Artifact: 18 Million Links in Commit Messages: Purpose, Evolution, and Decay
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6442049.svg)](https://doi.org/10.5281/zenodo.6442049)
 
 [https://github.com/NAIST-SE/18MillionLinksInCommitMessages/](https://github.com/NAIST-SE/18MillionLinksInCommitMessages/)
 
@@ -19,23 +20,12 @@ Since our full dataset exceeds the file size limitation of GitHub, we split some
 - [Link evolution](./rq4): Repeated links (n=46)
 
 ### RQ5
-- Changes to the link target: 
+- Changes to link targets: 
   - [Raw output of link target status comparison](./rq5/RQ5_Link_Evolution.csv)
-  - Link target and status in WayBack Machine (n=1,145)
+  - Link target and status according to [Wayback Machine](https://web.archive.org/), retrieved using [this script](./rq5/wayback-machine-retriever) (n=1,145)
 - Stack Overflow case study:
-  - We executed the following query on the [SOTorrent dataset](https://empirical-software.engineering/projects/sotorrent/) using BigQuery:
+  - We executed [an SQL query](./rq5/sotorrent_bigquery.sql) to retrieve change events of Stack Overflow threads using the [SOTorrent BigQuery dataset](https://empirical-software.engineering/sotorrent/).
   - [Results](./rq5/so-case.xlsx)
-```
-SELECT Event, COUNT(*)
-FROM `SOTorrent.EditHistory`
-WHERE PostId IN (
-SELECT PostId
-FROM `SOTorrent.Threads`
-WHERE ParentId = <threadID>
-)
-AND TIMESTAMP(CreationDate) > TIMESTAMP("<commitTimestamp>")
-GROUP BY Event;
-```
 
 
 ### RQ6
